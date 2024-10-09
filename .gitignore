@@ -10,8 +10,8 @@ __pycache__/
 # Airflow
 airflow/*.db
 airflow/logs/
-airflow/*.pid
-airflow/*.txt
+airflow/airflow-webserver.pid
+airflow/standalone_admin_password.txt
 airflow/dags/*.pyc
 airflow.cfg
 unittests.cfg
