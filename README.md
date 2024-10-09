@@ -34,8 +34,8 @@ Data is aggregated to create a view that provides insights into the number of br
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/brewery-data-pipeline.git
-cd brewery-data-pipeline
+git clone https://github.com/joaov-menezes/abinbev-openbrewery-test.git
+cd abinbev-openbrewery-test
 ```
 
 ### 2. Create a .env file
