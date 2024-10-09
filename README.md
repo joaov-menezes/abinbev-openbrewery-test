@@ -33,14 +33,14 @@ Data is aggregated to create a view that provides insights into the number of br
 - Apache Airflow
 
 ### 1. Clone the Repository
-\```bash
+```bash
 git clone https://github.com/yourusername/brewery-data-pipeline.git
 cd brewery-data-pipeline
-\```
+```
 
 ### 2. Create a .env file
 The .env file should contain the following variables:
-\```
+```
 FILE_PATH_BRONZE=/opt/airflow/data/bronze
 FILE_PATH_SILVER=/opt/airflow/data/silver
 OUTPUT_VIEW = 'vw_brewery_by_location_by_type'
@@ -49,19 +49,19 @@ SMTP_HOST=smtp.mailserver.com
 SMTP_PORT=587
 SMTP_USER=username
 SMTP_PASSWORD=password
-\```
+```
 
 ### 3. Build and Start Docker Services
 Run the following command to build the Docker containers and start the services, including Airflow and Spark.
-\```bash
+```bash
 docker-compose up --build
-\```
+```
 
 ### 4. Access the Airflow Web Interface
 Once the services are up, access the Airflow interface by navigating to:
-\```
+```
 http://localhost:8080
-\```
+```
 Log in with the default credentials (airflow/airflow).
 
 ### 5. Trigger the DAG

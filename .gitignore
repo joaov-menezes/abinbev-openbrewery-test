@@ -10,19 +10,13 @@ __pycache__/
 # Airflow
 airflow/*.db
 airflow/logs/
+airflow/*.pid
+airflow/*.txt
 airflow/dags/*.pyc
 airflow.cfg
 unittests.cfg
 webserver_config.py
 
-
-# Docker
-docker-compose.override.yml
-docker-compose.*.yml
-Dockerfile.*
-*.dockerfile
-docker-compose.yml
-**/Dockerfile
 
 # PySpark
 *.parquet
