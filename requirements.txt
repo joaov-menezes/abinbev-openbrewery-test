@@ -1,0 +1,6 @@
+requests
+pandas
+pyspark
+python-dotenv
+logging
+pytest

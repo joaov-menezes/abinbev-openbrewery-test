@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+
+# Airflow
+airflow/*.db
+airflow/logs/
+airflow/dags/*.pyc
+airflow.cfg
+unittests.cfg
+webserver_config.py
+
+
+# Docker
+docker-compose.override.yml
+docker-compose.*.yml
+Dockerfile.*
+*.dockerfile
+docker-compose.yml
+**/Dockerfile
+
+# PySpark
+*.parquet
+*.json
+
+# Environment variables
+.env
+*.env
+
+# Ignorar diretórios de builds e ambientes virtuais
+venv/
+env/
+ENV/
+.venv/
+.venv/
+
+# Outros
+*.DS_Store
+*.log
+*.tmp
+*.swp
+*.swo
+.idea/
+.vscode/
