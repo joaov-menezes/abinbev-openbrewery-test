@@ -1,4 +1,3 @@
-
 services:
   docker-proxy:
     image: alpine/socat
@@ -17,6 +16,7 @@ services:
       - SMTP_PASSWORD=${SMTP_PASSWORD}
     volumes:
        - ./airflow:/opt/airflow
+       - ./.env:/opt/.env
     ports:
       - "8080:8080"
     command: airflow standalone

@@ -8,6 +8,8 @@ import logging
 import os
 import sys
 from dotenv import load_dotenv
+
+
 # Adicionar o caminho da pasta airflow ao sys.path para permitir importações
 sys.path.append('/opt/airflow')
 
@@ -15,7 +17,7 @@ from scripts.api_to_bronze import fetch_and_save_breweries_data
 from scripts.bronze_to_silver import transform_data
 from scripts.silver_to_gold import create_gold_view
 
-load_dotenv('/opt/airflow/.env')
+load_dotenv('/opt/.env')
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 BRONZE_PATH =  os.getenv('BRONZE_PATH')
